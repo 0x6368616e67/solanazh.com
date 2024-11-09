@@ -1,0 +1,114 @@
+.course-page {
+  .course-list {
+    margin: 0 auto;
+    padding: 1.5rem 1.25rem;
+
+    .course-week {
+      margin-bottom: 32px;
+
+      &-header {
+        display: flex;
+        padding: 0.75rem;
+        width: 100%;
+        border-bottom-width: 1px;
+        border-color: rgb(193 188 194);
+
+        .week-number {
+          display: block;
+          flex-shrink: 1;
+          padding-right: 1.25rem;
+          font-weight: 300;
+          text-transform: uppercase;
+          letter-spacing: -0.025em;
+          border-right-width: 1px;
+          border-color: rgb(193 188 194);
+          font-size: 1.25rem;
+          line-height: 1.75rem;
+          color: rgb(10 10 14);
+        }
+
+        .week-title {
+          padding-left: 1.25rem;
+          padding-right: 1.25rem;
+          font-size: 1.5rem;
+          line-height: 2rem;
+          font-weight: 600;
+        }
+      }
+
+      .course-lesson-list {
+        .course-lesson {
+          display: flex;
+          padding: 1rem;
+          margin: 0 -1rem;
+
+          .lesson-status {
+            position: relative;
+            cursor: pointer;
+            border-radius: 0.75rem;
+            height: 3.5rem;
+            width: 3.5rem;
+            padding: 0.75rem;
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+            display: inline-flex;
+            place-items: center;
+            align-items: center;
+            justify-self: center;
+            text-align: center;
+            border-width: 1px;
+            --tw-border-opacity: 1;
+            border-color: rgb(193 188 194 / var(--tw-border-opacity));
+            --tw-bg-opacity: 1;
+            background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+
+            span,
+            svg {
+              display: block;
+              margin-left: auto !important;
+              margin-right: auto !important;
+              place-items: center !important;
+              justify-content: center !important;
+              justify-self: center !important;
+              text-align: center !important;
+            }
+          }
+
+          .lesson-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            margin-left: 1.25rem;
+
+            .lesson-title {
+              display: flex;
+              align-items: center;
+              font-size: 1.25rem;
+              line-height: 1.75rem;
+              cursor: pointer;
+
+              &:hover {
+                text-decoration: underline;
+              }
+
+              svg {
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;
+                height: 1.25rem;
+                width: 1.25rem;
+              }
+            }
+            .lesson-meta {
+              margin-top: 0.25rem;
+              font-size: 0.875rem;
+              line-height: 1.25rem;
+              --tw-text-opacity: 1;
+              color: rgb(136 128 137 / var(--tw-text-opacity));
+            }
+          }
+        }
+      }
+    }
+  }
+}
